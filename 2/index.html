@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Депозитный калькулятор</h1>
+    </header>
+    <main>
+        <section>
+            <form name="calculator">
+                <div>
+                    <h3>Первоначальный депозит</h3>
+                    <input name="money" type="number" placeholder="10000" required>
+                </div>
+                <div>
+                    <h3>Срок вклада в месяцах?</h3>
+                    <select name="months">
+                        <option value="1">1 м. (минимум)</option>
+                        <option value="3">3 м.</option>
+                        <option value="6">6 м. (полгода)</option>
+                        <option value="12" selected>12 м. (год)</option>
+                        <option value="18">18 м. (1.5 года)</option>
+                        <option value="24">24 м. (2 года)</option>
+                        <option value="30">30 м. (2.5 года)</option>
+                        <option value="36">36 м. (3 года)</option>
+                        <option value="60">60 м. (5 лет)</option>
+                    </select>
+                </div>
+                <div>
+                    <h3>Годовая процентная ставка</h3>
+                    <p>Согласно вашему тарифу, вам была присвоена ставка 7%</p>
+                </div>
+            </form>
+
+            <div style="margin-top: 100px;">
+                <h3>Ваш депозит на начало расчётного периода составлял: <p style=" display: inline-block;"
+                        id="money-before">
+                    </p> рублей</h3>
+                <h3>Через год у вас будет <p style="display: inline-block;" id="money-after"></p> руб. на счету</h3>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="./index.js"></script>
+</body>
+
+</html>
